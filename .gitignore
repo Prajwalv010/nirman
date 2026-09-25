@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.pt
+.pytest_cache/
+detections_dump.json
+sessions/
+camera_source.txt
+*.patch
+step604_prompt.txt
+
