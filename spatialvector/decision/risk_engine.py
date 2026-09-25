@@ -95,7 +95,7 @@ class RiskEngineConfig:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> RiskEngineConfig:
+    def from_dict(cls, data: Dict[str, Any]) -> 'RiskEngineConfig':
         thresholds = data.get("state_thresholds")
         if thresholds is not None and not isinstance(thresholds, dict):
             raise ValueError("state_thresholds must be a dictionary")
